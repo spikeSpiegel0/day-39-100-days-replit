@@ -25,7 +25,8 @@ while True:
     print("nope, not in there")
     lives -= 1
 
-  allLeters = True
+  allLeters = True #At the beginning of the loop, before the user has picked any letters, the code sets allLeters to True. Then, as the user picks letters, the code loops through the letters of the word and checks if each letter has been picked by the user. If a letter has not been picked yet, the code sets allLeters to False and continues to the next letter. 
+#After the loop, if allLeters is still True, it means that the user has picked all the letters in the word and the user wins the game. If allLeters is False, it means that the user has not picked all the letters yet and the game continues.
   print()
   for i in myWord:
     if i in letterPicked:
